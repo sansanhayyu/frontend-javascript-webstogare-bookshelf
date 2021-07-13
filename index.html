@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps Santi Rahayu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bookshelf Apps Santi Rahayu
+        </h1>
+    </header>
+    <div class="wrapper" >
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Masukan Buku Baru</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                <div class="input_inline">
+                    <input type="checkbox" id="checkbox-book-is-complete" name="checkbox-book-is-complete" value="Selesai dibaca">
+                    <label for="checkbox-book-is-complete"> Selesai dibaca</label><br>
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </form>
+        </div>
+    </div>
+    
+    <div id="searchWrapper" class="wrapper">
+        <input type="text" name="searchBar" id="searchBar" placeholder="Search for a book">
+    </div>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Belum selesai dibaca :</h2>
+            <div class="list-item" id="books">
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper" >
+        <div class="container bg-white shadow">
+            <h2 class="container-header text-center">Selesai dibaca :</h2>
+            <div class="list-item" id="completed-books">
+            </div>
+        </div>
+    </div>
+  
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script> 
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
